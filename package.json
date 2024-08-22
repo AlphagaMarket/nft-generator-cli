@@ -26,7 +26,8 @@
   "homepage": "https://github.com/manuelpires/nft-collection-generator#readme",
   "dependencies": {
     "canvas": "^2.8.0",
-    "gif-encoder-2": "^1.0.5"
+    "gif-encoder-2": "^1.0.5",
+    "arweave": "^1.15.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",
