@@ -146,7 +146,9 @@ Once you have you walletFile.json in the project and you have it funded with arw
 
 > Uploading images (THIS MUST BE DONE FIRST but after you GENERATE YOUR IMAGE FILES). You can begin the image upload with the command `npm run upload-images`. Depending on the amount of files and file sizes you should plan to let the upload process without interuption; if interupted the manifest upload will most likely fail. Once it suceeds you will have a manifest url like this. `https://emji6bgqbxcf2i4t22pa2nzjqtmpdl576ihefzjwu5z2hqlr4yma.arweave.net/IxKPBNANxF0jk9aeDTcphNjxr7_yDkLlNqdzo8Fx5hg` adding a `/0` to this url gets you the first image of the manifest and so forth up to 200 in this example.
 
-> uploading metadata (YOU FIRST MUST CONFIGURE THIS `config.IMAGES_BASE_URI = "https://base-uri-to-my-nft-images.com/";`) in the config.js (you would use a link similar to this but your own: `https://emji6bgqbxcf2i4t22pa2nzjqtmpdl576ihefzjwu5z2hqlr4yma.arweave.net/IxKPBNANxF0jk9aeDTcphNjxr7_yDkLlNqdzo8Fx5hg/` and then run `update-base-uri`) After both of these are done you should see your metadata with the links that correspond to each image using your image manifest upload link. You can now begin the manifest metadata upload `npm run upload-metadata` The manifest url can now be used for creating your nft collection as the nft base uri.
+> Uploading metadata (YOU FIRST MUST CONFIGURE THIS `config.IMAGES_BASE_URI = "https://base-uri-to-my-nft-images.com/";`) in the config.js (you would use a link similar to this but your own: `https://emji6bgqbxcf2i4t22pa2nzjqtmpdl576ihefzjwu5z2hqlr4yma.arweave.net/IxKPBNANxF0jk9aeDTcphNjxr7_yDkLlNqdzo8Fx5hg/` and then run `update-base-uri`) After both of these are done you should see your metadata with the links that correspond to each image using your image manifest upload link. You can now begin the manifest metadata upload `npm run upload-metadata` The manifest url can now be used for creating your nft collection as the nft base uri.
+
+> Uploading Collection.json, this will upload the file collection.json (it must be named this) that you make in the base directory. `npm run upload-collectionjson`
 
 ## License
 

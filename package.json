@@ -11,7 +11,8 @@
     "create-gif": "node scripts/create-gif.js",
     "calculate-hashes": "node scripts/calculate-hashes.js",
     "upload-images": "node uploadImages.js",
-    "upload-metadata": "node uploadMetadata.js"
+    "upload-metadata": "node uploadMetadata.js",
+    "upload-collectionjson": "node uploadMetadata.js"
   },
   "repository": {
     "type": "git",
