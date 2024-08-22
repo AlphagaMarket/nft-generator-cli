@@ -9,7 +9,9 @@
     "test": "mocha *.test.js",
     "update-base-uri": "node scripts/update-base-uri.js",
     "create-gif": "node scripts/create-gif.js",
-    "calculate-hashes": "node scripts/calculate-hashes.js"
+    "calculate-hashes": "node scripts/calculate-hashes.js",
+    "upload-images": "node uploadImages.js",
+    "upload-metadata": "node uploadMetadata.js"
   },
   "repository": {
     "type": "git",

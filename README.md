@@ -136,6 +136,18 @@ Before modifying the _traits_ list, please go through the next important instruc
 
 > Running the command `npm test` will verify that these set of rules are taken into account within your current configuration, and that the generated metadata would follow the standards. Use it!
 
+## Arweave Upload!
+
+You will need a arweave walletFile.json (or a wallet key file with arweave). <a href="https://arweave.app/"> Arweave Online Wallet </a> 
+
+From here it will ask you to backup your wallet and you should jot down your 12 word passphrase and do the walletFile.json backup. It is important this file is named `walletFile.json` or the scripts will not work.
+
+Once you have you walletFile.json in the project and you have it funded with arweave. It is important to have the right amount to store all your data on the arweave blockchain. To confirm your arweave amount and data upload refer to this site for upload costs. <a href="https://ar-fees.arweave.dev"> Arweave Fee Calculator </a>
+
+> Uploading images (THIS MUST BE DONE FIRST but after you GENERATE YOUR IMAGE FILES). You can begin the image upload with the command `npm run upload-images`. Depending on the amount of files and file sizes you should plan to let the upload process without interuption; if interupted the manifest upload will most likely fail. Once it suceeds you will have a manifest url like this. `https://emji6bgqbxcf2i4t22pa2nzjqtmpdl576ihefzjwu5z2hqlr4yma.arweave.net/IxKPBNANxF0jk9aeDTcphNjxr7_yDkLlNqdzo8Fx5hg` adding a `/0` to this url gets you the first image of the manifest and so forth up to 200 in this example.
+
+> uploading metadata (YOU FIRST MUST CONFIGURE THIS `config.IMAGES_BASE_URI = "https://base-uri-to-my-nft-images.com/";`) in the config.js (you would use a link similar to this but your own: `https://emji6bgqbxcf2i4t22pa2nzjqtmpdl576ihefzjwu5z2hqlr4yma.arweave.net/IxKPBNANxF0jk9aeDTcphNjxr7_yDkLlNqdzo8Fx5hg/` and then run `update-base-uri`) After both of these are done you should see your metadata with the links that correspond to each image using your image manifest upload link. You can now begin the manifest metadata upload `npm run upload-metadata` The manifest url can now be used for creating your nft collection as the nft base uri.
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
