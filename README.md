@@ -15,7 +15,7 @@ This is a simple Node.js project that uses a list of pre-configured traits and i
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/manuelpires/nft-collection-generator.git
+   git clone https://github.com/AlphagaMarket/nft-generator-cli
    ```
 
 2. Inside the repo directory install NPM packages
